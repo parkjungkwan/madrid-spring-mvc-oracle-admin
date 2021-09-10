@@ -17,6 +17,10 @@ public class BookServiceImpl implements BookService{
 	public List<BookDto> findAll() {
 		return bookMapper.findAll();
 	}
+	@Override
+	public BookDto findById(int bookId) {
+		return bookMapper.findById(bookId);
+	}
 
 }
 

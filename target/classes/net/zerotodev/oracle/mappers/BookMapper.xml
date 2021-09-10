@@ -9,5 +9,48 @@
 			pub_id pubId
 		 from books
 	</select>
+	<select id="findById" resultType="net.zerotodev.oracle.book.domain.BookDto"
+	parameterType="int">
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where book_id like ${bookId}       
+	</select>
+	<select id="findByPubId" resultType="net.zerotodev.oracle.book.domain.BookDto"
+	parameterType="int">
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where pub_id like ${pubId}  
+	</select>
+	<select id="findByBookTitle" resultType="net.zerotodev.oracle.book.domain.BookDto" 
+	parameterType="string">
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where book_title '%'|| #{value} || '%' </select>
+    <select id="findByPrice" resultType="net.zerotodev.oracle.book.domain.BookDto" 
+	parameterType="int">
 	
+		select 
+			book_id bookId,
+			book_title bookTitle,
+			price,
+			pub_id pubId
+		 from books
+         where price >= ${price}      
+       
+	</select>
 </mapper>
+
+
+
