@@ -15,8 +15,7 @@ public class BookServiceImpl implements BookService{
 	@Autowired BookMapper bookMapper;
 	@Override
 	public List<BookDto> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return bookMapper.findAll();
 	}
 
 }
