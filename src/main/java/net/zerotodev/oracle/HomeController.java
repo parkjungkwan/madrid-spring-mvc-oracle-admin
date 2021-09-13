@@ -27,7 +27,9 @@ public class HomeController {
 	
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(HttpSession session, HttpServletRequest request) {
+	public String home(
+			HttpSession session, 
+			HttpServletRequest request) {
 		String contextPath = request.getContextPath();
     	session.setAttribute("contextPath", contextPath);
 		return "index";
