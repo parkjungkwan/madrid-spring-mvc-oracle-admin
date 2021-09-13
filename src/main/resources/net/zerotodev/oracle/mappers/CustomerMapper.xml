@@ -4,6 +4,6 @@
 	<insert id="save" parameterType="net.zerotodev.oracle.customer.domain.CustomerDto">
 		insert into 
 		customers (cust_id, cust_name, address, phone)
-		values (${customer.custId}, #{customer.custName}, #{customer.address}, #{customer.phone})
+		values (${custId}, #{custName}, #{address}, #{phone})
 	</insert>
 </mapper>
