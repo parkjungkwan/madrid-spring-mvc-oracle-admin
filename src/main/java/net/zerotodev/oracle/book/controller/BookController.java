@@ -17,6 +17,34 @@ import net.zerotodev.oracle.common.GenericInterface;
 @Controller
 public class BookController{
 
+	@Autowired BookService bookService;
+
+	@RequestMapping("/save")
+	public void save(BookDto t) {
+		bookService.save(t);
+		
+	}
+
+	@RequestMapping("/find/{id}")
+	public BookDto findById(Integer id) {
+		return bookService.findById(id);
+	}
+
+	@RequestMapping("/list")
+	public List<BookDto> findAll() {
+		return bookService.findAll();
+	}
+
+	@RequestMapping(value = "/update", method = RequestMethod.POST)
+	public void update(@RequestBody BookDto t) {
+		bookService.update(t);
+	}
+
+	@RequestMapping(value = "/delete/{id}", method = RequestMethod.POST)
+	public void delete(@PathVariable Integer id) {
+		bookService.delete(id);
+	}
+
 	
 	
 	
