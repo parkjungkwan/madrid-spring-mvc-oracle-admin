@@ -6,7 +6,7 @@
 <jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>로그인 폼</h2>
+<h2>로그인 </h2>
 
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">

@@ -15,7 +15,7 @@ public class CustomerController {
 	@Autowired CustomerService customerService;
 	@Autowired CustomerDto customer;
 	
-	@RequestMapping(value="/join", method= {RequestMethod.POST})
+	@RequestMapping(value="/register", method= {RequestMethod.POST})
 	public String join(
 			@RequestParam("custId") int custId,
 			@RequestParam("custName") String custName,

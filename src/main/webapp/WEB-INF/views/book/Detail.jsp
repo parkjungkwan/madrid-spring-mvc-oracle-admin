@@ -4,12 +4,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <jsp:include page="../common/head.jsp"/>
+
 <body>
 
 <h2>책 상세</h2>
 
 <form action="${contextPath}/books" method="post">
-  <div class="container">
+  <div class="container"> 
     <label for="bookId"><b>bookId</b></label>
     	<input type="text" placeholder="Enter ID" name="bookId" required>
     <label for="bookTitle"><b>bookTitle</b></label>

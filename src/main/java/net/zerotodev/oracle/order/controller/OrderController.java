@@ -11,30 +11,6 @@ import net.zerotodev.oracle.order.service.OrderService;
 
 @Controller
 public class OrderController {
-	@Autowired OrderService orderService;
-	@Autowired OrderDto order;
-	public String save(Object o) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public Object findById(String id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public List<?> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public String update(Object o) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public String delete(String id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
-	
-
 
 }
