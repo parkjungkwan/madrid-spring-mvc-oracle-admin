@@ -6,7 +6,7 @@ import net.zerotodev.oracle.common.GenericInterface;
 import net.zerotodev.oracle.customer.domain.CustomerDto;
 
 @Component
-public interface CustomerService extends GenericInterface<CustomerDto>{
+public interface CustomerService extends GenericInterface<CustomerDto, Integer>{
 
 
 

@@ -6,6 +6,6 @@ import net.zerotodev.oracle.common.GenericInterface;
 import net.zerotodev.oracle.publishers.domain.PublisherDto;
 
 @Repository
-public interface PublisherMapper extends GenericInterface<PublisherDto>{
+public interface PublisherMapper extends GenericInterface<PublisherDto, Integer>{
 
 }

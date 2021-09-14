@@ -20,7 +20,7 @@ public class CustomerServiceImpl implements CustomerService{
 	}
 
 	@Override
-	public CustomerDto findById(String id) {
+	public CustomerDto findById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -38,7 +38,7 @@ public class CustomerServiceImpl implements CustomerService{
 	}
 
 	@Override
-	public String delete(String id) {
+	public String delete(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

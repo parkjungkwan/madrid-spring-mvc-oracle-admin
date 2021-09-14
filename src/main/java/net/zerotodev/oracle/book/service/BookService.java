@@ -10,7 +10,7 @@ import net.zerotodev.oracle.common.GenericInterface;
 import net.zerotodev.oracle.customer.domain.CustomerDto;
 
 @Component
-public interface BookService extends GenericInterface<BookDto>{
+public interface BookService extends GenericInterface<BookDto, Integer>{
 	
 
 }

@@ -21,7 +21,7 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public BookDto findById(String id) {
+	public BookDto findById(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -39,7 +39,7 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public String delete(String id) {
+	public String delete(Integer id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

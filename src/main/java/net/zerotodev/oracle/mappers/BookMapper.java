@@ -8,7 +8,7 @@ import net.zerotodev.oracle.book.domain.BookDto;
 import net.zerotodev.oracle.common.GenericInterface;
 
 @Repository
-public interface BookMapper extends GenericInterface<BookDto>{
+public interface BookMapper extends GenericInterface<BookDto, Integer>{
 	
 	public List<BookDto> findByBookTitle(String title);
 }
