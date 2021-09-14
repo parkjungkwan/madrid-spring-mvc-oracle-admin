@@ -30,10 +30,12 @@ public class BookServiceImpl implements BookService{
 
 	@Override
 	public void update(BookDto t) {
+		bookMapper.update(t);
 	}
 
 	@Override
 	public void delete(Integer id) {
+		bookMapper.delete(id);
 	}
 
 }

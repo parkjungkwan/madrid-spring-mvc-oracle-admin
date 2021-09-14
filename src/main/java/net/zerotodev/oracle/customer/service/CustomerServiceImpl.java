@@ -15,24 +15,27 @@ public class CustomerServiceImpl implements CustomerService{
 
 	@Override
 	public void save(CustomerDto t) {
+		mapper.save(t);
 	}
 
 	@Override
 	public CustomerDto findById(Integer id) {
-		return null;
+		return mapper.findById(id);
 	}
 
 	@Override
 	public List<CustomerDto> findAll() {
-		return null;
+		return mapper.findAll();
 	}
 
 	@Override
 	public void update(CustomerDto t) {
+		mapper.update(t);
 	}
 
 	@Override
 	public void delete(Integer id) {
+		mapper.delete(id);
 	}
 
 	

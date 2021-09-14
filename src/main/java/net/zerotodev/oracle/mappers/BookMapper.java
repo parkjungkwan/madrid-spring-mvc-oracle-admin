@@ -11,4 +11,6 @@ import net.zerotodev.oracle.common.GenericInterface;
 public interface BookMapper extends GenericInterface<BookDto, Integer>{
 	
 	public List<BookDto> findByBookTitle(String title);
+	public List<BookDto> findByPrice(String price);
+	public List<BookDto> findByPubId(String pubId);
 }

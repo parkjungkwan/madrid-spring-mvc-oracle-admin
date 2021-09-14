@@ -5,46 +5,47 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import net.zerotodev.oracle.book.domain.BookDto;
 import net.zerotodev.oracle.book.service.BookService;
+import net.zerotodev.oracle.common.GenericInterface;
 
 
 @Controller
-public class BookController {
+public class BookController{
 
 	@Autowired BookService bookService;
 
 	@RequestMapping("")
-	public String save(BookDto t) {
+	public void save(BookDto t) {
 		bookService.save(t);
-		return "";
+		
 	}
 
 	@RequestMapping("")
-	public BookDto findById(String id) {
-		// TODO Auto-generated method stub
-		return null;
+	public BookDto findById(Integer id) {
+		return bookService.findById(id);
 	}
 
 	@RequestMapping("")
 	public List<BookDto> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return bookService.findAll();
 	}
 
-	@RequestMapping("")
-	public String update(BookDto t) {
-		// TODO Auto-generated method stub
-		return "";
+	@RequestMapping(value = "", method = RequestMethod.PUT)
+	public void update(@RequestBody BookDto t) {
+		bookService.update(t);
 	}
 
-	@RequestMapping("")
-	public String delete(String id) {
-		// TODO Auto-generated method stub
-		return "";
+	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+	public void delete(@PathVariable Integer id) {
+		bookService.delete(id);
 	}
+
+	
 	
 	
 }

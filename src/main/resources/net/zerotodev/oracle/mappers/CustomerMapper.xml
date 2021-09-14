@@ -6,4 +6,8 @@
 		customers (cust_id, cust_name, address, phone)
 		values (${custId}, #{custName}, #{address}, #{phone})
 	</insert>
+	<select id="findById" resultType="string"  parameterType="string"></select>
+	<select id="findAll" resultType="string" ></select>
+	<update id="update" parameterType="string"></update>
+	<delete id="delete" parameterType="string"></delete>
 </mapper>
