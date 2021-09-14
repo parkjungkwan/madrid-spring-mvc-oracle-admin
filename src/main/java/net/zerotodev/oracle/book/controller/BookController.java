@@ -18,7 +18,8 @@ public class BookController {
 
 	@RequestMapping("")
 	public String save(BookDto t) {
-		return bookService.save(t);
+		bookService.save(t);
+		return "";
 	}
 
 	@RequestMapping("")
@@ -36,13 +37,13 @@ public class BookController {
 	@RequestMapping("")
 	public String update(BookDto t) {
 		// TODO Auto-generated method stub
-		return null;
+		return "";
 	}
 
 	@RequestMapping("")
 	public String delete(String id) {
 		// TODO Auto-generated method stub
-		return null;
+		return "";
 	}
 	
 	

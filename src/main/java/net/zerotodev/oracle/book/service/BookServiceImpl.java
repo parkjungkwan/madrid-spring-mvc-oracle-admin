@@ -15,33 +15,25 @@ public class BookServiceImpl implements BookService{
 	@Autowired BookMapper bookMapper;
 
 	@Override
-	public String save(BookDto t) {
-		// TODO Auto-generated method stub
-		return null;
+	public void save(BookDto t) {
 	}
 
 	@Override
 	public BookDto findById(Integer id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<BookDto> findAll() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String update(BookDto t) {
-		// TODO Auto-generated method stub
-		return null;
+	public void update(BookDto t) {
 	}
 
 	@Override
-	public String delete(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+	public void delete(Integer id) {
 	}
 
 }

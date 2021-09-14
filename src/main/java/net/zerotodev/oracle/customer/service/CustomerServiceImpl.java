@@ -14,33 +14,25 @@ public class CustomerServiceImpl implements CustomerService{
 	@Autowired CustomerMapper mapper;
 
 	@Override
-	public String save(CustomerDto t) {
-		// TODO Auto-generated method stub
-		return null;
+	public void save(CustomerDto t) {
 	}
 
 	@Override
 	public CustomerDto findById(Integer id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<CustomerDto> findAll() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String update(CustomerDto t) {
-		// TODO Auto-generated method stub
-		return null;
+	public void update(CustomerDto t) {
 	}
 
 	@Override
-	public String delete(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+	public void delete(Integer id) {
 	}
 
 	
