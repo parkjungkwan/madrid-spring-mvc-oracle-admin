@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import net.zerotodev.oracle.IController;
+import net.zerotodev.oracle.common.GenericInterface;
 import net.zerotodev.oracle.orders.domain.OrderDto;
 import net.zerotodev.oracle.orders.service.OrderService;
 

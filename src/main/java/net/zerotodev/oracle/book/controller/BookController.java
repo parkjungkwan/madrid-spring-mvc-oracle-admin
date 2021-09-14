@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import net.zerotodev.oracle.IController;
 import net.zerotodev.oracle.book.domain.BookDto;
 import net.zerotodev.oracle.book.service.BookService;
 
@@ -16,34 +15,35 @@ import net.zerotodev.oracle.book.service.BookService;
 public class BookController {
 
 	@Autowired BookService bookService;
-	
-	@RequestMapping("/books")
-	public void findAll() {
-		List<BookDto> books = bookService.findAll();
-		for(BookDto book : books) {
-			System.out.println(book.toString());
-		}
-	}
-	@RequestMapping("/books/bookId/{bookId}")
-	public void findById(@PathVariable int bookId) {
-		BookDto book = bookService.findById(bookId);
-		System.out.println(book.toString());
-	}
-	
-	@RequestMapping("/books/pubId/{pubId}")
-	public void findByPubId(@PathVariable int pubId) {
-		List<BookDto> books = null;
-		
-	}
-	@RequestMapping("/books/bookTitle/{bookTitle}")
-	public void findByBookTitle(@PathVariable String bookTitle) {
-		List<BookDto> books = null;
-		
-	}
-	@RequestMapping("/books/price/{price}")
-	public void findByPrice(@PathVariable int price) {
-		List<BookDto> books = null;
-	}
-	
 
+	@RequestMapping("")
+	public String save(BookDto t) {
+		return bookService.save(t);
+	}
+
+	@RequestMapping("")
+	public BookDto findById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@RequestMapping("")
+	public List<BookDto> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@RequestMapping("")
+	public String update(BookDto t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@RequestMapping("")
+	public String delete(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
 }

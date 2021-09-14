@@ -6,10 +6,11 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import net.zerotodev.oracle.book.domain.BookDto;
+import net.zerotodev.oracle.common.GenericInterface;
+import net.zerotodev.oracle.customer.domain.CustomerDto;
 
 @Component
-public interface BookService {
-	public List<BookDto> findAll();
-	public BookDto findById(int bookId);
+public interface BookService extends GenericInterface<BookDto>{
+	
 
 }

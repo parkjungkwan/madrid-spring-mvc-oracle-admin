@@ -1,4 +1,4 @@
-package net.zerotodev.oracle;
+package net.zerotodev.oracle.common;
 
 import java.text.DateFormat;
 import java.util.Date;

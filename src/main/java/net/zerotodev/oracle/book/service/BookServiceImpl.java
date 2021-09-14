@@ -13,13 +13,35 @@ import net.zerotodev.oracle.mappers.BookMapper;
 public class BookServiceImpl implements BookService{
 	
 	@Autowired BookMapper bookMapper;
+
+	@Override
+	public String save(BookDto t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BookDto findById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	@Override
 	public List<BookDto> findAll() {
-		return bookMapper.findAll();
+		// TODO Auto-generated method stub
+		return null;
 	}
+
 	@Override
-	public BookDto findById(int bookId) {
-		return bookMapper.findById(bookId);
+	public String update(BookDto t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String delete(String id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
