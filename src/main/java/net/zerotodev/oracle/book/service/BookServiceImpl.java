@@ -15,27 +15,28 @@ public class BookServiceImpl implements BookService{
 	@Autowired BookMapper bookMapper;
 
 	@Override
-	public void save(BookDto t) {
+	public void save(BookDto book) {
+		bookMapper.save(book);
 	}
 
 	@Override
-	public BookDto findById(Integer id) {
-		return null;
+	public BookDto findById(Integer bookId) {
+		return bookMapper.findById(bookId);
 	}
 
 	@Override
 	public List<BookDto> findAll() {
-		return null;
+		return bookMapper.findAll();
 	}
 
 	@Override
-	public void update(BookDto t) {
-		bookMapper.update(t);
+	public void update(BookDto book) {
+		bookMapper.update(book);
 	}
 
 	@Override
-	public void delete(Integer id) {
-		bookMapper.delete(id);
+	public void delete(Integer bookId) {
+		bookMapper.delete(bookId);
 	}
 
 }

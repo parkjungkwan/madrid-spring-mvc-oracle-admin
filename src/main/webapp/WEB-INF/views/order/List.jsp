@@ -1,28 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<h2>주문 목록</h2>
+    
+<h2>Order List Form</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="${contextPath}/orders/list" method="post">
   
-
-  <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
-    
-  
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
-
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
-    <button type="submit">Join</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-    
-    
+ <div class="container">
+    <button type="submit">CHECK</button>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">

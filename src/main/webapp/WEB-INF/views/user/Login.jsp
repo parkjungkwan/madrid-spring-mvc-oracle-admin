@@ -6,9 +6,9 @@
 <jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>로그인 </h2>
+<h2>Customer Login</h2>
 
-<form action="/action_page.php" method="post">
+<form action="/users/login" method="post">
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>

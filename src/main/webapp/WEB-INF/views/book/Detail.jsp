@@ -9,16 +9,10 @@
 
 <h2>책 상세</h2>
 
-<form action="<%= application.getContextPath() %>/books" method="post">
+<form action="${contextPath}/books/find" method="get">
   <div class="container"> 
     <label for="bookId"><b>bookId</b></label>
     	<input type="text" placeholder="Enter ID" name="bookId" required>
-    <label for="bookTitle"><b>bookTitle</b></label>
-    	<input type="text" placeholder="Enter name" name="bookTitle" required>
-    <label for="price"><b>price</b></label>
-    	<input type="text" placeholder="Enter address" name="price" >
-    <label for="pubId"><b>pubId</b></label>
-    	<input type="text" placeholder="Enter phone" name="pubId" required>
     <button type="submit">책 상세</button>
   </div>
 </form>

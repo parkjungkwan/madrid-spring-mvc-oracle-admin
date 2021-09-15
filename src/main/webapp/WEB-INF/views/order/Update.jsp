@@ -4,36 +4,50 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <jsp:include page="../common/head.jsp"/>
-<h2>주문 수정</h2>
+<body>
 
-<form action="${contextPath}/customers/join" method="post">
-  
+<h2>Order Update Form</h2>
+
+<form action="${contextPath}/orders/update" method="post">
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
-    
   
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
+  	<label for="orderId"><b>orderId</b></label>
+    <input type="text" placeholder="Enter ID" name="orderId" required>
+    
+    <label for="custId"><b>custId</b></label>
+    <input type="text" placeholder="Enter custId" name="custId" required>
 
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
-    <button type="submit">Join</button>
+    <label for="bookId"><b>bookId</b></label>
+    <input type="text" placeholder="Enter bookId" name="bookId" required>
+    
+    <label for="orderPrice"><b>orderPrice</b></label>
+    <input type="text" placeholder="Enter orderPrice" name="orderPrice" required>
+    
+    <label for="orderDate"><b>orderDate</b></label>
+    <input type="text" placeholder="Enter orderDate" name="orderDate" required>
+        
+    <button type="submit">UPDATE</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
-    
-    
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 
+<h2>Order Delete Form</h2>
+
+<form action="${contextPath}/orders/delete">
+  <div class="container">
+  
+  	<label for="orderId"><b>orderId</b></label>
+    <input type="text" placeholder="Enter ID" name="orderId" required>
+    
+    <button type="submit">Delete</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+</form>
 </body>
 </html>

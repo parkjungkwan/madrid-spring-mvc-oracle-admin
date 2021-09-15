@@ -6,24 +6,17 @@
 <jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>주문 등록</h2>
+<h2>사진 조회</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="<%= request.getContextPath() %>/photos/find">
   
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
+    <label for="photoId"><b>photoId</b></label>
+    <input type="text" placeholder="Enter ID" name="photoId" required>
     
-  
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
-
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
-    <button type="submit">Join</button>
+    
+    <button type="submit">조회</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

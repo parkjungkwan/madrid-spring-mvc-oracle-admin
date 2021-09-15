@@ -38,6 +38,21 @@ public class CustomerServiceImpl implements CustomerService{
 		mapper.delete(id);
 	}
 
+	@Override
+	public List<CustomerDto> findByCustName(String custName) {
+		return mapper.findByCustName(custName);
+	}
+
+	@Override
+	public List<CustomerDto> findByAddress(String address) {
+		return mapper.findByAddress(address);
+	}
+
+	@Override
+	public List<CustomerDto> findByPhone(String phone) {
+		return mapper.findByPhone(phone);
+	}
+
 	
 
 }

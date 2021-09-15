@@ -7,5 +7,6 @@
 		<typeAlias type="net.zerotodev.oracle.customer.domain.CustomerDto" alias="customer"/>
 		<typeAlias type="net.zerotodev.oracle.order.domain.OrderDto" alias="order"/>
 		<typeAlias type="net.zerotodev.oracle.publisher.domain.PublisherDto" alias="publisher"/>
+		<typeAlias type="net.zerotodev.oracle.photo.domain.PhotoDto" alias="photo"/>
 	</typeAliases>
 </configuration>

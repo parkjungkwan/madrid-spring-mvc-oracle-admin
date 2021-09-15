@@ -6,8 +6,55 @@
 		customers (cust_id, cust_name, address, phone)
 		values (${custId}, #{custName}, #{address}, #{phone})
 	</insert>
-	<select id="findById" resultType="string"  parameterType="string"></select>
-	<select id="findAll" resultType="string" ></select>
-	<update id="update" parameterType="string"></update>
-	<delete id="delete" parameterType="string"></delete>
+	<select id="findById" resultType="customer"  parameterType="string">
+	select
+	cust_id custId,
+	cust_name custName,
+	address,
+	phone
+	from customers where cust_id like ${custId}
+	</select>
+	<select id="findByCustName" resultType="customer"  parameterType="string">
+	select
+	cust_id custId,
+	cust_name custName,
+	address,
+	phone
+	from customers where cust_name like '%' || #{custName} || '%' 
+	</select>
+	<select id="findByAddress" resultType="customer"  parameterType="string">
+	select
+	cust_id custId,
+	cust_name custName,
+	address,
+	phone
+	from customers where address like '%' || #{address} || '%'
+	</select>
+	<select id="findByPhone" resultType="customer"  parameterType="string">
+	select
+	cust_id custId,
+	cust_name custName,
+	address,
+	phone
+	from customers where phone like '%' || #{phone} || '%'
+	</select>
+	<select id="findAll" resultType="customer" >
+	select
+	cust_id custId,
+	cust_name custName,
+	address,
+	phone
+	from customers
+	</select>
+	<update id="update" parameterType="customer">
+	update customers set
+	cust_name = #{custName},
+	address = #{address},
+	phone = #{phone}
+	where cust_id like ${custId}
+	</update>
+	<delete id="delete" parameterType="customer">
+	delete from customers
+		where cust_id like ${custId}
+	</delete>
 </mapper>

@@ -6,36 +6,21 @@
 <jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>고객 상세</h2>
+<h2>Customer Detail</h2>
 
-<form action="${contextPath}/customers/join" method="post">
-  
-
+<form action="<%= application.getContextPath() %>/customers/detail/custId" method="post">
   <div class="container">
     <label for="custId"><b>custId</b></label>
     <input type="text" placeholder="Enter ID" name="custId" required>
-    
-  
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
-
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
-    <button type="submit">Join</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-    
-    
+    <button type="submit">Detail</button>
   </div>
+</form><hr/>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
+<a href="./customer/Detail">Detail</a>
+<a href="./customer/Detail">List</a>
+<a href="./customer/Detail">Login</a>
+<a href="./customer/Detail">Register</a>
+<a href="./customer/Detail">Update</a>
+<a href="./customer/Detail">Delete</a>
 </body>
 </html>

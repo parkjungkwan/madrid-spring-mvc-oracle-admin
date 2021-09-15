@@ -6,9 +6,9 @@
 <jsp:include page="../common/head.jsp"/>
 <body>
 
-<h2>고객 등록</h2>
+<h2>Customer Register</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="<%= application.getContextPath() %>/customers/register" method="post">
   
 
   <div class="container">
@@ -23,17 +23,7 @@
     <input type="text" placeholder="Enter address" name="address" >
         <label for="phone"><b>phone</b></label>
     <input type="text" placeholder="Enter phone" name="phone" required>
-    <button type="submit">Join</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-    
-    
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <button type="submit">Register</button>     
   </div>
 </form>
 

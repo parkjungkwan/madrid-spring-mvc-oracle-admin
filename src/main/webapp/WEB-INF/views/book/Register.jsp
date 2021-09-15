@@ -8,21 +8,20 @@
 
 <h2>책 등록</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="${contextPath}/books/save" method="post">
   
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
-    
+    <label for="bookId"><b>bookId</b></label>
+    <input type="text" placeholder="Enter ID" name="bookId" required>
   
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
+    <label for="bookTitle"><b>bookTitle</b></label>
+    <input type="text" placeholder="Enter bookTitle" name="bookTitle" required>
 
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
+    <label for="price"><b>price</b></label>
+    <input type="text" placeholder="Enter price" name="price" >
+        <label for="pubId"><b>pubId</b></label>
+    <input type="text" placeholder="Enter pubId" name="pubId" required>
     <button type="submit">Join</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
