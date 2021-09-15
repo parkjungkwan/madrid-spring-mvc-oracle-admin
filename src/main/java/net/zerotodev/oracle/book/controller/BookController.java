@@ -24,34 +24,36 @@ public class BookController{
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public String save(BookDto book) {
 		bookService.save(book);
-		return "redirect:/move/book/List";
+		return "redirect:/move/home/intro";
 		
 	}
 
 	@RequestMapping(value = "/find", method = RequestMethod.GET)
-	public BookDto findById(@RequestParam(name = "bookId")Integer bookId) {
+	public String findById(@RequestParam(name = "bookId")Integer bookId) {
 		BookDto book = bookService.findById(bookId);
 		System.out.println(book.toString());
-		return book;
+		return "redirect:/move/home/intro";
 	}
 
 	@RequestMapping(value = "/list", method = RequestMethod.POST)
-	public List<BookDto> findAll() {
+	public String findAll() {
 		List<BookDto> books = bookService.findAll();
 		for (BookDto book : books) {
 			System.out.println(book.toString());
 		}
-		return bookService.findAll();
+		return "redirect:/move/home/intro";
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
-	public void update(BookDto book) {
+	public String update(BookDto book) {
 		bookService.update(book);
+		return "redirect:/move/home/intro";
 	}
 
 	@RequestMapping(value = "/delete", method = RequestMethod.POST)
-	public void delete(@PathVariable Integer id) {
+	public String delete(@PathVariable Integer id) {
 		bookService.delete(id);
+		return "redirect:/move/home/intro";
 	}
 
 	
