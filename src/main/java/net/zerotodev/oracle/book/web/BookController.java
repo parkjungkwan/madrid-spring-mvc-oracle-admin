@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import net.zerotodev.oracle.book.model.BookDto;
 import net.zerotodev.oracle.book.model.BookService;
-import net.zerotodev.oracle.common.GenericInterface;
+import net.zerotodev.oracle.common.service.GenericInterface;
 
 
 @Controller

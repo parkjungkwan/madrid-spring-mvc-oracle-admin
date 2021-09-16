@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import net.zerotodev.oracle.common.GenericInterface;
+import net.zerotodev.oracle.common.service.GenericInterface;
 import net.zerotodev.oracle.customer.model.CustomerDto;
 
 @Component

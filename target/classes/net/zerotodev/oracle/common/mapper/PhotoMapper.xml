@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.zerotodev.oracle.common.mapper.PhotoMapper">
+	<select id="findAll2" resultType="net.zerotodev.oracle.photo.model.PhotoDto">
+		select
+		    photo_id photoId,
+		    album_id albumId,
+		    location_id locationId,
+		    member_id memberId,
+		    title ,
+		    photo_description photoDescription,
+		    privacy ,
+		    upload_date uploadDate,
+		    photo_view photoView,
+		    image_path imagePath
+		from photos
+	</select>
+	<select id="findById" resultType="photo" parameterType="int">
+		select
+		    album_id albumId,
+		    location_id locationId,
+		    member_id memberId,
+		    title ,
+		    photo_description photoDescription,
+		    privacy ,
+		    upload_date uploadDate,
+		    photo_view photoView,
+		    image_path imagePath
+		from photos
+		where photo_id like ${photoId}
+	</select>
+	<insert id="save" parameterType="photo">
+		insert into 
+		photos(photo_id, album_id, location_id, member_id, 
+		title, photo_description, privacy, upload_date, photo_view, image_path)
+		values(${photoId}, ${albumId}, ${locationId}, ${memberId}, 
+		#{title}, #{photoDescription}, #{privacy}, #{uploadDate}, ${photoView}, #{imagePath})
+	</insert>
+	<update id="update" parameterType="photo">
+		update photos set
+		    album_id = ${albumId},
+		    location_id = ${locationId},
+		    member_id = ${memberId},
+		    title = #{title},
+		    photo_description = #{photoDescription},
+		    privacy = #{privacy},
+		    upload_date = #{uploadDate},
+		    photo_view =${photoView},
+		    image_path = #{imagePath}
+		where photo_id like ${photoId}
+	</update>
+	<delete id="delete" parameterType="int">
+		delete from photos
+		where photo_id like ${photoId}
+	</delete>
+</mapper>
