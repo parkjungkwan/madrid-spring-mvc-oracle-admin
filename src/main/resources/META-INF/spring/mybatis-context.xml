@@ -3,10 +3,10 @@
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="net.zerotodev.oracle.book.domain.BookDto" alias="book"/>
-		<typeAlias type="net.zerotodev.oracle.customer.domain.CustomerDto" alias="customer"/>
-		<typeAlias type="net.zerotodev.oracle.order.domain.OrderDto" alias="order"/>
-		<typeAlias type="net.zerotodev.oracle.publisher.domain.PublisherDto" alias="publisher"/>
-		<typeAlias type="net.zerotodev.oracle.photo.domain.PhotoDto" alias="photo"/>
+		<typeAlias type="net.zerotodev.oracle.book.model.BookDto" alias="book"/>
+		<typeAlias type="net.zerotodev.oracle.customer.model.CustomerDto" alias="customer"/>
+		<typeAlias type="net.zerotodev.oracle.order.model.OrderDto" alias="order"/>
+		<typeAlias type="net.zerotodev.oracle.publisher.model.PublisherDto" alias="publisher"/>
+		<typeAlias type="net.zerotodev.oracle.photo.model.PhotoDto" alias="photo"/>
 	</typeAliases>
 </configuration>
