@@ -6,21 +6,11 @@
 <jsp:include page="../common/head.jsp"/>
 <h2>출판사 목록</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="${contextPath}/publishers/list">
   
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
     
-  
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
-
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
     <button type="submit">Join</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me

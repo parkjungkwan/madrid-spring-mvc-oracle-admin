@@ -8,19 +8,19 @@
 
 <h2>출판사 수정</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="${contextPath}/publishers/update" method="post">
   
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
+    <label for="pubId"><b>custId</b></label>
+    <input type="text" placeholder="Enter ID" name="pubId" required>
     
   
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
+    <label for="pubName"><b>name</b></label>
+    <input type="text" placeholder="Enter name" name="pubName" required>
 
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
+    <label for="mgrName"><b>address</b></label>
+    <input type="text" placeholder="Enter name" name="mgrName" >
         <label for="phone"><b>phone</b></label>
     <input type="text" placeholder="Enter phone" name="phone" required>
     <button type="submit">Join</button>
@@ -28,6 +28,25 @@
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
     
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<form action="${contextPath}/publishers/delete" method="post">
+  
+
+  <div class="container">
+    <label for="pubId"><b>custId</b></label>
+    <input type="text" placeholder="Enter ID" name="pubId" required>
+    
+    <button type="submit">Join</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
     
   </div>
 

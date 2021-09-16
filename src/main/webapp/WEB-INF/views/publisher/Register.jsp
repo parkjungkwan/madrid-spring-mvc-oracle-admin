@@ -8,19 +8,19 @@
 
 <h2>출판사 등록</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<form action="${contextPath}/publishers/register" method="post">
   
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
+    <label for="pubId"><b>custId</b></label>
+    <input type="text" placeholder="Enter ID" name="pubId" required>
     
   
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
+    <label for="pubName"><b>name</b></label>
+    <input type="text" placeholder="Enter name" name="pubName" required>
 
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
+    <label for="mgrName"><b>address</b></label>
+    <input type="text" placeholder="Enter name" name="mgrName" >
         <label for="phone"><b>phone</b></label>
     <input type="text" placeholder="Enter phone" name="phone" required>
     <button type="submit">Join</button>

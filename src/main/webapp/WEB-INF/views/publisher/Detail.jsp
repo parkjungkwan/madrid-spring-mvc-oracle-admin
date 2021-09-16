@@ -6,21 +6,36 @@
 <jsp:include page="../common/head.jsp"/>
 <h2>출판사 상세</h2>
 
-<form action="${contextPath}/customers/join" method="post">
+<h3>findById</h3>
+<form action="${contextPath}/publishers/detail/id" method="post">
   
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
-    
-  
-    <label for="custName"><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
+    <label for="pubId"><b>custId</b></label>
+    <input type="text" placeholder="Enter ID" name="pubId" required>
 
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" >
-        <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
+    <button type="submit">Join</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    
+    
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<h3>findByPubName</h3>
+<form action="${contextPath}/publisher/detail/name" method="post">
+  
+
+  <div class="container">
+    <label for="pubName"><b>custId</b></label>
+    <input type="text" placeholder="Enter name" name="pubName" required>
+
     <button type="submit">Join</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
